@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Project Pertama</title>
+	<title>Laravel</title>
 </head>
 <body>
-Hello Laravel
+
+Hallo ini latihan pertama saya 
+
 </body>
 </html>
