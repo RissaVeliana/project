@@ -27,13 +27,9 @@
 			@include('layouts.caro')
 			<!-- end caroussel -->
 			<div class="jumbotron">
-				<h2>
-					Hello, world!
-				</h2>
-				<p>
-					@yield('isi')
-				</p>
-				
+			     {{-- isi --}}
+					@yield('content')
+				{{-- Akhir Isi --}}
 			</div>
 		</div>
 	</div>

@@ -31,17 +31,34 @@ Route::get('/about/3', function(){
 	return view('about.tiga');
 });
 
-Route::get('/about/{nama}/{sekolah}/{umur}', function($a,$b,$c){
-	return 'Nama : '.$a. 
-	'<br> Sekolah : '.$b. 
-	'<br> Umur : '.$c;
-});
-
-
 Route::get('/halaman/{nama}', function(){
 	$a='john';
 	return 'Nama : '.$a;
 	});
+
+Route::get('master',function(){
+	return view('layouts.master2');
+});
+
+Route::get('/relasi', function(){
+	$ortu = App\ortu::all();
+	foreach ($ortu as $key) {
+			echo $key->nama_ayah;
+			echo " dengan ";
+			echo $key->nama_ibu;
+			echo " mempunyai anak ";
+			foreach ($key->siswa as $data) {
+				echo "<li>".$data->nama."</li>";
+				echo "<hr>";
+			}
+					
+	}
+});
+
+Route::get('/coba', 'MyController@index');
+Route::get('/ortu', 'MyController@tampilmodel');
+Route::get('/view', 'MyController@tampilview');
+Route::get('/coba2', 'MyController@percobaan');
 
 
 // Route::get('/testmodel', function(){
@@ -82,9 +99,4 @@ Route::get('/halaman/{nama}', function(){
  // Route::get('/testmodel', function(){
  // 	$a= App\Post::all();
  // 	return $a;
- // });
-
-
-Route::get('cektampilan', function(){
-	return view('layouts.master');
-});
+ //

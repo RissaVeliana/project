@@ -1,7 +1,8 @@
 @extends('layouts.master')
-@section('isi')
+@section('content')
 
+<h1>Halo</h1>
 Selamat datang di webapp saya.<br>
-Laravel, Memang Menyenangkan
+Laravel,emang keren banget!
 
 @endsection
