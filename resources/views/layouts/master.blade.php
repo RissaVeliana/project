@@ -24,7 +24,7 @@
 			<!-- end nav -->
 			
 			<!-- caroussel -->
-			@include('layouts.caro')
+			<!-- @include('layouts.caro') -->
 			<!-- end caroussel -->
 			<div class="jumbotron">
 			     {{-- isi --}}

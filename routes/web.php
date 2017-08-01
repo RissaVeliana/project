@@ -61,3 +61,5 @@ Route::get('/view', 'MyController@tampilview');
 Route::get('/coba2', 'MyController@percobaan');
 
 Route::resource('/orangtua', 'OrtuController');
+Route::resource('/siswa', 'SiswaController');
+
